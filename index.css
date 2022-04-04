@@ -15,6 +15,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
 }
 
 #cards {
@@ -63,6 +69,7 @@ button:active {
 
 #new-deck {
     width: 200px;
+    margin-bottom: 0;
 }
 
 #draw-cards {
