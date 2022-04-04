@@ -23,6 +23,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin: 5px 0;
+}
+
 div.top {
     display: flex;
     align-self: flex-start;
@@ -38,7 +42,7 @@ div.card-slot {
     height: 240px;
     width: calc(240px * 5 / 7);
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .card {
