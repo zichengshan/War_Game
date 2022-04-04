@@ -9,3 +9,9 @@ This game has been deployed: https://main.d3oo53cag05fle.amplifyapp.com/
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/61951792/161605528-61b1b536-9176-4205-9cb6-c860f0000458.gif)
 
+### Highlight
+1. Callbacks
+   1. Functions as first-class objects
+2. Promises
+   1. Three states (pending, fulfilled, rejected)
+   2. .then() and chaining
