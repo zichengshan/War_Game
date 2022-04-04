@@ -19,6 +19,8 @@ function handleClick() {
         .then(data => {
             remainingText.textContent = `Remaining Cards: ${data.remaining}`
             deckId = data.deck_id
+            drawCardBtn.disabled = false
+            drawCardBtn.classList.remove("disabled")
         })
 }
 
@@ -36,6 +38,15 @@ function drawCards() {
             if(data.remaining === 0){
                 drawCardBtn.disabled = true
                 drawCardBtn.classList.add("disabled")
+                if(computerScore > myScore){
+                    headerEl.textContent = `Final Winner is Computer`
+                }else if (myScore > computerScore){
+                    headerEl.textContent = `Final Winner is You`
+                }else {
+                    headerEl.textContent = `It's a tie game!`
+                }
+                headerEl.style.color = "orange"
+                headerEl.style.fontSize = "2em"
             }
         })
 }
