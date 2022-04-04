@@ -23,6 +23,11 @@ h2 {
     text-align: center;
 }
 
+div.top {
+    display: flex;
+    align-self: flex-start;
+}
+
 #cards {
     margin: 0 auto;
 }
@@ -70,6 +75,7 @@ button:active {
 #new-deck {
     width: 200px;
     margin-bottom: 0;
+    margin-right: 20px;
 }
 
 #draw-cards {
