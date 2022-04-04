@@ -13,12 +13,13 @@ function handleClick() {
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/", {method: "GET"})
         .then(res => res.json())
         .then(data => {
+            remainingText.textContent = `Remaining Cards: ${data.remaining}`
             deckId = data.deck_id
         })
 }
 
 function drawCards() {
-    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=4`, {method: "GET"})
+    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`, {method: "GET"})
         .then(res => res.json())
         .then(data => {
             remainingText.textContent = `Remaining Cards: ${data.remaining}`
