@@ -11,7 +11,12 @@ function handleClick() {
 }
 
 function drawCards() {
-    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`, {method: "GET"})
+    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=4`, {method: "GET"})
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            // console.log(data)
+            data.cards.map(card => document.getElementById("card-images").innerHTML += `
+                <img src="${card.image}">
+            `)
+        })
 }
