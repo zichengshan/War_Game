@@ -72,6 +72,11 @@ button:active {
     transform: translateY(4px);
 }
 
+button.disabled {
+    cursor: not-allowed;
+    background-color: grey;
+}
+
 #new-deck {
     width: 200px;
     margin-bottom: 0;

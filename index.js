@@ -26,6 +26,11 @@ function drawCards() {
             cardsContainer.children[0].innerHTML = `<img class="card" src=${data.cards[0].image} />`
             cardsContainer.children[1].innerHTML = `<img class="card" src=${data.cards[1].image} />`
             headerEl.innerText = determineCardWinner(data.cards[0], data.cards[1])
+
+            if(data.remaining === 0){
+                drawCardBtn.disabled = true
+                drawCardBtn.classList.add("disabled")
+            }
         })
 }
 
