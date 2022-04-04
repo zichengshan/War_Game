@@ -1,5 +1,11 @@
 # War_Game
+## Description
+1. Accessing Deck of Cards API (https://deckofcardsapi.com/#draw-card) to get a new deck and draw two cards
+2. Track remaining cards and update score
+3. After going through all the remaining cards in the deck, determine the final winner
 
+## Demo
+This game has been deployed: https://main.d3oo53cag05fle.amplifyapp.com/
 
-## Reference
-Docs for original Deck of Cards API:https://deckofcardsapi.com/#draw-card
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/61951792/161605528-61b1b536-9176-4205-9cb6-c860f0000458.gif)
+
