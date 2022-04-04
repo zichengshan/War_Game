@@ -1,9 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Exo 2", sans-serif;
+    background-image: url("img/table.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
-    font-size: 24px;
-    padding: 20px
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+button:hover,
+botton:focus {
+    background-color: #3e8e41;
+    color: white;
+    transform: scale(1.1);
+}
+
+button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+#new-deck {
+    width: 200px;
+}
+
+#draw-cards {
+    padding:18px;
 }

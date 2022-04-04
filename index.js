@@ -14,9 +14,9 @@ function drawCards() {
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=4`, {method: "GET"})
         .then(res => res.json())
         .then(data => {
-            // console.log(data)
-            data.cards.map(card => document.getElementById("card-images").innerHTML += `
-                <img src="${card.image}">
-            `)
+            document.getElementById("cards").innerHTML = `
+                <img src=${data.cards[0].image} />
+                <img src=${data.cards[1].image} />
+            `
         })
 }
