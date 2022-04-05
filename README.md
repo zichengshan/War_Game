@@ -1,8 +1,9 @@
 # War_Game
 ## Description
 1. Accessing Deck of Cards API (https://deckofcardsapi.com/#draw-card) to get a new deck and draw two cards
-2. Track remaining cards and update score
-3. After going through all the remaining cards in the deck, determine the final winner
+2. Click **New Deck** to start a new deck and click **Draw** to draw cards
+3. Track remaining cards and update score
+4. After going through all the remaining cards in the deck, determine the final winner
 
 ## Demo
 This game has been deployed: https://main.d3oo53cag05fle.amplifyapp.com/
